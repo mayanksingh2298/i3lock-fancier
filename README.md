@@ -11,7 +11,7 @@ Features:
 * Loading configurations from .ini config files with [this library](https://github.com/rxi/ini)
 * Keyboard indicator and Caps Lock layout:
 
-![Feature showcase](https://raw.githubusercontent.com/SuperPrower/i3lock-fancier/master/feature.png)
+![Feature showcase](https://github.com/mayanksingh2298/i3lock-fancier/blob/master/screenshot.png)
 
 Just copy test_config.ini to $HOME/.config/i3lock-fancier/config.ini and
 configure it as you like using provided commentaries.
