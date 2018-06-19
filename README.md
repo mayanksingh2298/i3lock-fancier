@@ -38,7 +38,7 @@ rm $PICTURE
 ```
 4. Give it execute permission by typing in:
 ```bash
-sudo chmod +x i3_blur_lock.sh
+sudo chmod +x /bin/i3_blur_lock.sh
 ```
 5. Now go to keyboard settings > shortcuts
 6. Add a custom shortcut which launches when you press Super + L and has command `i3_blur_lock.sh`. (You may have to disable the original binding of Super+L)
