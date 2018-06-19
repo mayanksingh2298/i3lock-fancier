@@ -7,7 +7,7 @@ create my ultimate lockscreen experience.
 
 ## Features:
 * will set up keyboard shortcuts and terminal aliases
-* the background of lockscreen is the current blurry screen of desktop
+* the lockscreen's background is your current blurry screen
 * shows time and date
 * separated configuration variables and more cleaner code in future
 * loading configurations from .ini config files with [this library](https://github.com/rxi/ini)
@@ -24,9 +24,9 @@ create my ultimate lockscreen experience.
 git clone https://github.com/mayanksingh2298/i3lock-fancier
 cd i3lock-fancier
 sudo make install
+mkdir ~/.config/i3lock-fancier
+cp test_config.ini ~/.config/i3lock-fancier/config.ini
 ```
-2. Copy `test_config.ini` to `$HOME/.config/i3lock-fancier/config.ini` and
-configure it as you like using provided commnets.
 3. Create a script `i3_blur_lock.sh` in /bin and fill it with the following code
 ```bash
 PICTURE=~/.config/i3lock-fancier/i3lock.png
@@ -36,9 +36,13 @@ convert $PICTURE -blur $BLUR $PICTURE
 i3lock
 rm $PICTURE
 ```
-4. Now go to keyboard settings > shortcuts
-5. Add a custom shortcut which launches when you press Super + L and has command `i3_blur_lock.sh`
-6. Optionally you can add the following at the end of ~/.bashrc
+4. Give it execute permission by typing in:
+```bash
+sudo chmod +x i3_blur_lock.sh
+```
+5. Now go to keyboard settings > shortcuts
+6. Add a custom shortcut which launches when you press Super + L and has command `i3_blur_lock.sh`. (You may have to disable the original binding of Super+L)
+7. Optionally you can add the following at the end of ~/.bashrc
 ```bash
 #blurry screen lock
 lock(){
@@ -51,8 +55,8 @@ lock(){
 	rm $PICTURE	
 }
 ```
-7. That's it guys, now you can lock your screen by hitting Super+L or typing lock in your terminal
-8. Tune `$HOME/.config/i3lock-fancier/config.ini` as per your needs.
+8. That's it guys, now you can lock your screen by hitting Super+L or typing lock in your terminal
+9. Tune `$HOME/.config/i3lock-fancier/config.ini` as per your needs.
 
 ## Keep in mind:
 * I don't know how to work with OpenBSD, so I removed all BSD-related code
