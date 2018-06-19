@@ -19,7 +19,7 @@ configure it as you like using provided commentaries.
 i3lock-fancier is almost completely compatible with i3lock-color, and you can
 port your fany config and have cool screenshots like this:
 
-![Cool Screenshot](https://raw.githubusercontent.com/SuperPrower/i3lock-fancier/master/screenshot.png)
+![Cool Screenshot](https://github.com/mayanksingh2298/i3lock-fancier/blob/master/screenshot.png)
 
 Keep in mind:
 * I don't know how to work with OpenBSD, so I removed all BSD-related code
